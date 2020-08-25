@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body{
+    color: #fff;
+
+    background-image: url(./img/zonsondergang-aan-de-paalse-plas-1.jpg);
+    width:fit-content;
+    /* display: block; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background: opacity 0.2; */
+
+}
+
+
+.form-content {
+    width:300px;
+height:370px;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+/*     background:rgba(0,0,0,0.27); */
+  
+    margin: -184px 0px 0px -155px;
+    background: rgb(39 35 33 / 26%);
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.6),inset 0px 1px 0px rgba(255,255,255,0.04);}
+input.info{
+    color:wheat;
+    width:100%;
+    height:50px;
+    margin:3px;
+    background-color:transparent;
+    font-size:20px;
+    border-radius:1px;
+    border-color:#ff9800e0;
+
+
+
+        
+    }
+    .button-panel{
+      width:100%;
+      height:40px;
+      border:none;
+      border-radius:2px;
+      background-color:#00bcd4b5;
+      font-size:25px;
+/*       font-weight:bolder; */
+      color:white;
+      font-family:monospace;
+      transition:background-color 0.5s linear;
+
+    }
+.button-panel:hover{
+  background-color:#a40f04d4;
+}
+
+#signup{
+  font-size:25px;
+  color:#650a04;
+  transition:color 0.5s linear;
+  font-weight:bold;
+}
+
+#signup:hover{
+  color:#440602;
+}
+.header{
+  background-color:#27180e87;
+  font-size:30px;
+  position:absolute;
+  top:20%;
+  color:white;
+  width:50%;
+  left:50px;
+  font-family:cursive;
+}
+.logout{
+    color:red;
+    font-size: 30px;
+    font-weight: bold;
+}
