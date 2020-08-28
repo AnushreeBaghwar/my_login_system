@@ -2,11 +2,11 @@
 include ('database.php');
 
 if($_SERVER['REQUEST_METHOD']=="POST"){
-   $name=$_POST['newUser'];
-   $mail=$_POST['newEmail'];
-   $pass=md5($_POST['newPass']);
-    $sql="INSERT into profiles values(NULL,'$name','$mail','$pass')";
-    $query=mysqli_query($conn,$sql);
+   $name = $_POST['newUser'];
+   $mail = $_POST['newEmail'];
+   $pass = md5($_POST['newPass']);
+    $sql = "INSERT into profiles values(NULL,'$name','$mail','$pass')";
+    $query = mysqli_query($conn,$sql);
     if(session_status()==PHP_SESSION_NONE){
         session_start();
     }

@@ -1,5 +1,6 @@
 <?php 
 include "database.php";
+
 if(isset($_GET['code'])){
     $code = mysqli_real_escape_string($conn,$_GET['code']);
     $sql = mysqli_query($conn,"select * from reset_pass where code='$code'");
@@ -15,5 +16,4 @@ if(isset($_GET['code'])){
         echo "invlid code";
     }
 }
-
 ?>

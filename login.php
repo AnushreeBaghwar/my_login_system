@@ -2,8 +2,8 @@
 include 'database.php';
 
 if($_SERVER['REQUEST_METHOD']=="POST"){
-$user_mail=$_POST['mail'];
-$user_pass=md5($_POST['pass']);
+$user_mail = $_POST['mail'];
+$user_pass = md5($_POST['pass']);
 
 $query=mysqli_query($conn,"SELECT * from `profiles` where(`email`='$user_mail' and `password`='$user_pass')");
 if(session_status()==PHP_SESSION_NONE){
