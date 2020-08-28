@@ -14,10 +14,7 @@ if(session_status()==PHP_SESSION_NONE){
 // die('error:'.mysqli_connect_error());
 // 	}
 
- 
-
-
-	$num_row=mysqli_num_rows($query);
+    $num_row=mysqli_num_rows($query);
 	var_dump($user_pass);
 	if($num_row!==0){
 		$_SESSION['id']=$array['id'];
