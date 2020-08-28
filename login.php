@@ -22,9 +22,8 @@ if(session_status()==PHP_SESSION_NONE){
 	}
 	else{
 		echo "Incorrect Email/password.Try again:".mysqli_connect_error();
-
 	}
 }
-    
-  ?>
+	
+	?>
   
