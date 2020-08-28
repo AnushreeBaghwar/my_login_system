@@ -1,7 +1,5 @@
 <?php session_start(); ?>
 <?php include ('database.php');?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,9 +27,9 @@ elseif(isset($_SESSION['err_msg'])){
 ?>
 <h3>login here</h3>
 
-<input  type="email" placeholder="Enter your email address" class="info" name="mail">
+<input  type="email" placeholder="user@gmail.com" class="info" name="mail">
 
-<div class="info"><input class="info" type="password" placeholder="Enter your password" name="pass">
+<div class="info"><input class="info" type="password" placeholder="password" name="pass">
 </div>
 
 <br>
@@ -41,6 +39,7 @@ elseif(isset($_SESSION['err_msg'])){
 
 
 <p>New member?<a href="sign_up.php" id="signup">sign up now</a></p>
+<p>Forgot password? <a href="forgot_pass.php">Enter here</a></p>
 
 
 

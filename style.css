@@ -89,3 +89,11 @@ input.info{
     font-size: 30px;
     font-weight: bold;
 }
+
+.footer {
+  background-color:#101515;
+  position:fixed;
+  width:100%;
+  bottom:0%;
+  padding:20px;
+}
