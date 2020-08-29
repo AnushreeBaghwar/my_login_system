@@ -99,3 +99,17 @@ body{
 .err{
   color:#d61402;
 }
+
+input#dob {
+  background:transparent;
+  border:none;
+  color:#fff;
+  font-size:20px;
+}
+
+
+input#place {
+  background:transparent;
+  border:none;
+  border-bottom:1px solid #ffffff;
+  }
