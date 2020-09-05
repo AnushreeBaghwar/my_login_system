@@ -13,29 +13,16 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="style.css">
  <script src="https://kit.fontawesome.com/ec430933d5.js" crossorigin="anonymous"></script>
- 
- 
  </head>
  <body>
- <div class="header">
- <h3>hello <?php echo $data['username'];?></h3>
- <p>Welcome to our website.</p>
- <i class="fas fa-user"></i>
- <form action="user_info.php" method="post">
- <input type="date" name="bday" id="dob">
- <br>
- <label for="hometown">City/Town</label>
- <input type="text" name="hometown" id="place">
- <input type="submit" value="update">
- </form>
+ <div class="mainheader">
+ <a href="#" class="links">HOME</a>
+ <a href="user_profile.php" class="links"">PROFILE</a>
+ <a href="settings.php" class="links">SETTINGS</a>
+ </div>
  <div class="exit">
  <p><a href="logout.php" class="logout">Log out</a></p>
  </div>
- </div>
-
-
- 
-
-</body>
-</html>
+ </body>
+ </html>
 

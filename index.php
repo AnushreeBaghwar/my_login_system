@@ -38,6 +38,12 @@ if(isset($_SESSION['incorrect_mail'])){
     unset($_SESSION['incorrect_mail']);
 }
 ?>
+<?php
+if (isset($_SESSION['password_changed'])){
+    echo "<span>". $_SESSION['password_changed']."</span>";
+    unset($_SESSION['password_changed']);
+}
+?>
 
 
 <h3>login here</h3>
