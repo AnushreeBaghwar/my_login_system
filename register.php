@@ -5,7 +5,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
    $name = $_POST['newUser'];
    $mail = $_POST['newEmail'];
    $pass = md5($_POST['newPass']);
-    $sql = "INSERT into profiles values(NULL,'$name','$mail','$pass')";
+    $sql = "INSERT into profiles values(NULL,'$name','$mail','$pass',NULL)";
     $query = mysqli_query($conn,$sql);
     if(session_status()==PHP_SESSION_NONE){
         session_start();
