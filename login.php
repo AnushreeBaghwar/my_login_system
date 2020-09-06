@@ -10,18 +10,15 @@ if(session_status()==PHP_SESSION_NONE){
     session_start();
 }
 	$array=mysqli_fetch_array($query);
-// 	if(!$array){
-// die('error:'.mysqli_connect_error());
-// 	}
-
-    $num_row=mysqli_num_rows($query);
+	$num_row=mysqli_num_rows($query);
 	var_dump($user_pass);
 	if($num_row!==0){
 		$_SESSION['id']=$array['id'];
 		header('location:home.php');
 	}
 	else{
-		echo "Incorrect Email/password.Try again:".mysqli_connect_error();
+		$_SESSION['incorrect_mail'] = "Incorrect Email/password.";
+		header('location:index.php');
 	}
 }
 	

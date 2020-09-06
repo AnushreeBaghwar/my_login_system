@@ -32,6 +32,19 @@ if(isset($_SESSION['password_set'])){
 }
 ?>
 
+<?php
+if(isset($_SESSION['incorrect_mail'])){
+    echo "<span>".$_SESSION['incorrect_mail']."</span>";
+    unset($_SESSION['incorrect_mail']);
+}
+?>
+<?php
+if (isset($_SESSION['password_changed'])){
+    echo "<span>". $_SESSION['password_changed']."</span>";
+    unset($_SESSION['password_changed']);
+}
+?>
+
 
 <h3>login here</h3>
 <input  type="email" placeholder="user@gmail.com" class="info" name="mail">

@@ -99,3 +99,75 @@ body{
 .err{
   color:#d61402;
 }
+
+input#dob {
+  background:transparent;
+  border:none;
+  color:#fff;
+  font-size:20px;
+}
+
+
+input#place {
+  background:transparent;
+  border:none;
+  border-bottom:1px solid #ffffff;
+  }
+
+.mainheader {
+    background-color:#111212;
+    background-attachment:fixed;
+    z-index:1; 
+    color:white;
+    width:1000px;
+    padding:30px;
+}
+
+.user {
+  background:rgba( 0 0 1 0.8);
+  color:white;
+  position:fixed;
+  left:15%;
+  top:25%;
+  height:50%;
+  width:75%;
+  border:1px  #907171;
+  box-shadow:1px 1px 10px 15px #020609;
+}
+i.fas.fa-user {
+  font-size:60px;
+  position:fixed;
+  top:30%;
+  left:40%;
+  border:1px solid;
+  padding:20px;
+  border-radius:50%;
+  
+
+}
+  
+.user_details {
+  position:relative;
+  font-size:20px;
+
+}
+
+.fa-envelope{
+  font-size:30px;
+  position:relative;
+  top:40%;
+  left:-2%;
+  
+}
+
+a.links {
+  color:aliceblue;
+}
+
+img#userPic {
+  width:40%;
+  border-radius:50%;
+  border:3px solid white;
+  position:relative;
+  left:50%;
+}
